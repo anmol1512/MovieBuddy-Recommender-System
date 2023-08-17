@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap");
+:root {
+
+  /* colors */
+  --first-color: hsl(222, 80%, 58%);
+  --dark-color: hsl(222, 24%, 8%);
+  --title-color: hsl(222, 8%, 8%);
+  --text-color-light: hsl(222, 8%, 65%);
+  --white-color: #fff;
+  --body-color: hsl(222, 100%, 99%);
+
+  /* fonts */
+  --body-font: "Poppins", sans-serif;
+  --small-font-size: .813rem;
+}
+
+/* Adding responsiveness by using media query */
+@media screen and (min-width: 968px) {
+  :root {
+    --small-font-size: .875rem;
+  }
+}
+
+* {
+  font-family: var(--body-font);
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  /* background-color: var(--body-color); */
+  background-image: url(./homepage_image.jpg);
+  background-position: center;
+  color: #a3ff0f;;
+}
+
+#github_ribbon {
+  fill: #00ff88;
+  color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+.cat-tail {
+  transform-origin: 130px 106px;
+  fill: currentColor;
+}
+.cat-body {
+  fill: currentColor;
+}
+.app-name {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 60px;
+}
+.app-tagline {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.result-list-container{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#autoComplete {
+  width: 70vw;
+  box-shadow: 10px 5px 2px red;
+}
+
+.recommend-btn{
+  text-align: center;
+}
+
+#movie-recommend-button{
+  color: #ffffff;
+  border-radius: 10px;
+  height: 40px;
+  width:150px;
+  font-size: medium;
+  background-color: #e50914;
+  text-align: center;
+  border:2px solid #080808;
+
+}
+
+.app-title{
+  backdrop-filter: blur(1px);
+  text-shadow:rgb(255, 255, 255) 1px 0 2px;
+}
